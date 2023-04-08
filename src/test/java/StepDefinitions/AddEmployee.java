@@ -2,6 +2,7 @@ package StepDefinitions;
 
 import Utils.CommonMethods;
 import Utils.ConfigReader;
+import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
