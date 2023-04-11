@@ -1,20 +1,28 @@
 Feature: Searching the employee
 
-  @smoke
-  Scenario: Search Employee by Id
+  Background:
     When user enters valid email and valid password
     And click on login button
     When user clicks on PIM option
+  @smoke55
+  Scenario: Search Employee by Id
+    #Given open the browser and launch HRMS application
+    #When user enters valid email and valid password
+    #And click on login button
+    #When user clicks on PIM option
     When user enters valid employee Id
     And clicks on search button
     And user sees employee information displayed
+    #And close the browser
 
-  @smoke
+  @smoke123
   Scenario: Search Employee by Job Title
-    When user enters valid email and valid password
-    And click on login button
-    When user clicks on PIM option
+    #Given open the browser and launch HRMS application
+    #When user enters valid email and valid password
+    #And click on login button
+    #When user clicks on PIM option
     When user selects job title
     And clicks on search button
     And user sees employee information displayed
+    #And close the browser
 
