@@ -4,8 +4,13 @@ import Utils.CommonMethods;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.PageFactory;
 
 public class LoginPage extends CommonMethods {
+
+    public LoginPage(){
+        PageFactory.initElements(driver,this);
+    }
 
     //WebElement userNameTextBox = driver.findElement(By.xpath("//input[@type='text']"));
     @FindBy(xpath ="//input[@type='text']")
