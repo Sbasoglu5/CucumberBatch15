@@ -19,7 +19,12 @@ import java.time.Duration;
 import java.util.Map;
 import java.util.List;
 
-public class Login extends CommonMethods {
+public class
+
+
+
+
+Login extends CommonMethods {
 
     /*@Given("open the browser and launch HRMS application")
     public void open_the_browser_and_launch_hrms_application() {
@@ -30,7 +35,6 @@ public class Login extends CommonMethods {
 
         //driver.findElement(By.xpath("//input[@type='text']")).sendKeys(ConfigReader.getPropertyValue("userName"));
         //WebElement userNameTextBox = driver.findElement(By.xpath("//input[@type='text']"));
-        LoginPage login=new LoginPage();
         sendText(login.userNameTextBox, ConfigReader.getPropertyValue("username"));
 
         //driver.findElement(By.xpath("//input[@type='password']")).sendKeys(ConfigReader.getPropertyValue("password"));
