@@ -41,7 +41,6 @@ public class Login extends CommonMethods {
     @When("click on login button")
     public void click_on_login_button() {
         //WebElement loginBtn = driver.findElement(By.xpath("//input[@id='btnLogin']"));
-        LoginPage login=new LoginPage();
         doClick(login.loginBtn);
     }
 
@@ -60,7 +59,6 @@ public class Login extends CommonMethods {
 
     @When("user enters valid {string} and valid {string}")
     public void user_enters_valid_and_valid(String username, String password) {
-        LoginPage login=new LoginPage();
         //WebElement userNameTextBox = driver.findElement(By.xpath("//input[@type='text']"));
         sendText(login.userNameTextBox, username);
         //WebElement passwordTextBox = driver.findElement(By.xpath("//input[@type='password']"));
@@ -75,7 +73,6 @@ public class Login extends CommonMethods {
             String userName = userCreds.get("username");
             String password = userCreds.get("password");
 
-            LoginPage login=new LoginPage();
             sendText(login.userNameTextBox, userName);
             sendText(login.passwordTextBox, password);
             doClick(login.loginBtn);
