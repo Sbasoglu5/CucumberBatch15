@@ -19,12 +19,7 @@ import java.time.Duration;
 import java.util.Map;
 import java.util.List;
 
-public class
-
-
-
-
-Login extends CommonMethods {
+public class Login extends CommonMethods {
 
     /*@Given("open the browser and launch HRMS application")
     public void open_the_browser_and_launch_hrms_application() {
