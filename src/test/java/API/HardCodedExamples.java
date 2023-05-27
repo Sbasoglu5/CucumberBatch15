@@ -70,6 +70,14 @@ public class HardCodedExamples {
                 body("Employee.emp_firstname",equalTo("Tom"));
         response.then().assertThat().
                 body("Employee.emp_lastname",equalTo("Hanks"));
+        /*verify it by asserting
+        String msg=response.jsonPath().getString("Message");
+        String expectedMsg="Employee Created";
+        Assert.assertEquals(msg,expectedMsg);
+        or by capturing
+        response.then().assertThat().body("Message",equalTo("Employee Created"));
+        */
+
         //verify the response headers
         response.then().assertThat().header("Content-Type","application/json");
         System.out.println("My test case is passed");
