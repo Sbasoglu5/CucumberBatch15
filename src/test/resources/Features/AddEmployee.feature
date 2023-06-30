@@ -13,7 +13,7 @@ Feature: Employee
     And user enters firstname and middlename and lastname
     #And user clicks on save button
 
-  @testcase11
+  @testcaseDB
   Scenario: adding the employee from frontend and verifying it from backend
     And user enters "nesha" and "sania" and "standart"
     And user captures the employee id
